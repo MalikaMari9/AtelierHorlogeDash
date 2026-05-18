@@ -1,18 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_pop_up_drawer",
+  "%Name":"obj_ui_close",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_pop_up_drawer",
+  "name":"obj_ui_close",
   "overriddenProperties":[],
   "parent":{
-    "name":"drawer",
-    "path":"folders/Objects/drawer.yy",
+    "name":"UI",
+    "path":"folders/Objects/UI.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_drawer_inside",
-    "path":"sprites/spr_drawer_inside/spr_drawer_inside.yy",
+    "name":"spr_ui_close",
+    "path":"sprites/spr_ui_close/spr_ui_close.yy",
   },
   "spriteMaskId":null,
   "visible":true,
