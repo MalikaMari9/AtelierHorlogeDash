@@ -26,11 +26,18 @@ if (_input_x != 0 || _input_y != 0) {
 } else {
     if (mouse_check_button_pressed(mb_left)) {
         var _drawer = instance_position(mouse_x, mouse_y, obj_raw_matt_drawer);
+        var _craft_room = instance_position(mouse_x, mouse_y, obj_craft_room);
 
         if (_drawer != noone) {
             target_x = clamp(_drawer.x, walk_min_x, walk_max_x);
             target_y = clamp(_drawer.y + 92, walk_min_y, walk_max_y);
             target_interact = _drawer;
+            target_interact_facing = "back";
+            has_target = true;
+        } else if (_craft_room != noone) {
+            target_x = clamp(_craft_room.x, walk_min_x, walk_max_x);
+            target_y = clamp(_craft_room.y + 118, walk_min_y, walk_max_y);
+            target_interact = _craft_room;
             target_interact_facing = "back";
             has_target = true;
         } else {
@@ -73,6 +80,10 @@ if (_input_x != 0 || _input_y != 0) {
 
                 if (target_interact.object_index == obj_raw_matt_drawer && !instance_exists(obj_pop_up_drawer)) {
                     instance_create_layer(room_width * 0.5, room_height * 0.5, "pop_up", obj_pop_up_drawer);
+                }
+
+                if (target_interact.object_index == obj_craft_room && !instance_exists(obj_pop_up_craft)) {
+                    instance_create_layer(room_width * 0.5, room_height * 0.5, "pop_up", obj_pop_up_craft);
                 }
 
                 target_interact = noone;

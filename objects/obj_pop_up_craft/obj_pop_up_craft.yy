@@ -1,17 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_craft_window",
+  "%Name":"obj_pop_up_craft",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_craft_window",
+  "name":"obj_pop_up_craft",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"craft",
+    "path":"folders/Objects/craft.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_craft_window",
-    "path":"sprites/spr_craft_window/spr_craft_window.yy",
+    "name":"spr_craft_ui",
+    "path":"sprites/spr_craft_ui/spr_craft_ui.yy",
   },
   "spriteMaskId":null,
   "visible":true,
